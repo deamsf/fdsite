@@ -10,6 +10,9 @@ export default {
         accent: '#F2D3AC',
         highlight: '#D99379',
       },
+      fontFamily: {
+        display: ['Exo', 'sans-serif'],
+      },
     },
   },
   plugins: [],

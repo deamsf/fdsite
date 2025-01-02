@@ -94,7 +94,12 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-primary">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-white mb-12 text-center">Get in Touch</h2>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-bold text-white mb-4">Get in Touch</h2>
+          <p className="text-gray-300 max-w-2xl mx-auto">
+            Ready for strategic product guidance? Let's elevate your product management together.
+          </p>
+        </div>
         
         <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
           <div>
@@ -148,16 +153,6 @@ const Contact = () => {
             {messageError && <p className="mt-1 text-sm text-red-500">{messageError}</p>}
           </div>
 
-          {/* Uncomment to enable reCAPTCHA
-          <div className="flex justify-center">
-            <ReCAPTCHA
-              sitekey="6LcXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-              onChange={(value) => setRecaptchaValue(value)}
-              theme="dark"
-            />
-          </div>
-          */}
-          
           <div className="relative">
             <button
               type="submit"
