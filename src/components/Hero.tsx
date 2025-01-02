@@ -13,7 +13,7 @@ const Hero = () => {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-primary to-secondary pt-16 relative">
       <HeroBackground />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <p className="text-tertiary font-medium mb-4">Product management at your service</p>
+        <p className="text-tertiary font-medium mb-4">Strategic partner for your digital product</p>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
           We help you turn market insights into product excellence
         </h1>

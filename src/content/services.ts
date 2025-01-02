@@ -7,7 +7,7 @@ export const servicesContent = {
       title: "Discover",
       subtitle: "The Roots of the Product",
       icon: "Search",
-      description: "We help you explore and deeply understand your product from both user and market perspectives.",
+      description: "What needs to be built in order to ensure impact? We help you identify who your users and customers are, what they need and where your opportunities are. This creates strong strategic foundations for your digital product.",
       details: [
         {
           title: "User Research",
@@ -15,7 +15,7 @@ export const servicesContent = {
         },
         {
           title: "Market Research",
-          description: "Validate product ideas with market trends and early testing (pretotyping)"
+          description: "Validate product ideas with market trends and early testing"
         },
         {
           title: "Competitor Research",
@@ -32,7 +32,7 @@ export const servicesContent = {
       title: "Design",
       subtitle: "The Heart of the Product",
       icon: "Crown",
-      description: "We combine strategy and planning to give your product direction and structure.",
+      description: "We translate insights into a compelling product vision, strategy and roadmap. Our unique product management approach helps you create the perfect environment for your product development team to thrive.",
       details: [
         {
           title: "Product Manifesto",
@@ -46,6 +46,10 @@ export const servicesContent = {
           title: "Persona Development",
           description: "Create detailed user profiles to guide product decisions"
         },
+                {
+          title: "xx xx",
+          description: "user centered feature development / efficient backlog mgmt / strat aligned w market opportunities / ..."
+        },
         {
           title: "Product Roadmap",
           description: "Plan and prioritize features based on value and impact"
@@ -57,7 +61,7 @@ export const servicesContent = {
       title: "Delight",
       subtitle: "The Face of the Product",
       icon: "Sparkles",
-      description: "We ensure your product is not just functional but delightful for your users.",
+      description: "We ensure your website or app is not just functional and marketable, but intuitive, usable and simply delightful for your users. Too many people use products because they have to. Our ambition is to build impactful digital products people use because they love to.",
       details: [
         {
           title: "UX/UI Analysis",
@@ -69,11 +73,11 @@ export const servicesContent = {
         },
         {
           title: "Communication",
-          description: "Craft compelling GTM strategies and content that resonates"
+          description: "Craft compelling go-to-market strategies and content that resonates"
         },
         {
           title: "Performance",
-          description: "Monitor and optimize product metrics for continuous improvement"
+          description: "Define, monitor and optimize product success metrics"
         }
       ]
     }
