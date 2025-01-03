@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import { Search, Crown, Sparkles } from 'lucide-react';
 
 const icons = {
@@ -54,3 +54,5 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     </div>
   );
 };
+
+*/

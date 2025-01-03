@@ -5,6 +5,7 @@ import type { ServiceDetail } from './types';
 interface ServiceDetailsProps {
   details: ServiceDetail[];
   isVisible: boolean;
+  isLastInSection?: boolean;
 }
 
 const container = {
@@ -22,7 +23,11 @@ const item = {
   show: { opacity: 1, y: 0 }
 };
 
-export const ServiceDetailsNew: React.FC<ServiceDetailsProps> = ({ details, isVisible }) => {
+export const ServiceDetailsNew: React.FC<ServiceDetailsProps> = ({ 
+  details, 
+  isVisible,
+  isLastInSection 
+}) => {
   return (
     <AnimatePresence>
       {isVisible && (
@@ -31,13 +36,13 @@ export const ServiceDetailsNew: React.FC<ServiceDetailsProps> = ({ details, isVi
           animate={{ height: 'auto', opacity: 1 }}
           exit={{ height: 0, opacity: 0 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="overflow-hidden"
+          className={`overflow-hidden ${isLastInSection ? 'mb-10' : 'mb-2'}`}
         >
           <motion.div 
             variants={container}
             initial="hidden"
             animate="show"
-            className="grid md:grid-cols-2 gap-6 mt-12"
+            className="grid md:grid-cols-2 gap-6 mt-6"
           >
             {details.map((detail) => (
               <motion.div

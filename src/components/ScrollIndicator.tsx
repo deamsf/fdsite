@@ -9,13 +9,18 @@ const ScrollIndicator = () => {
 
   return (
     <div 
-      className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer animate-bounce"
+      className="absolute bottom-8 left-0 right-0 flex justify-center"
       onClick={scrollToContent}
     >
-      <ChevronDown 
-        size={32} 
-        className="text-accent hover:text-highlight transition-colors"
-      />
+      <button
+        className="p-2 rounded-full hover:bg-white/5 transition-colors cursor-pointer"
+        aria-label="Scroll to services section"
+      >
+        <ChevronDown 
+          size={32} 
+          className="text-accent hover:text-highlight transition-colors"
+        />
+      </button>
     </div>
   );
 };

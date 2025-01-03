@@ -25,7 +25,7 @@ export const ServicesNew = () => {
           </p>
         </motion.div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-4 md:gap-8">
           {servicesContent.services.map((service, index) => (
             <React.Fragment key={service.id}>
               <ServiceCardNew
@@ -37,10 +37,11 @@ export const ServicesNew = () => {
                 )}
               />
               {/* Mobile-only details section */}
-              <div className="md:hidden col-span-1">
+              <div className="md:hidden col-span-1 -mt-2">
                 <ServiceDetailsNew
                   details={service.details}
                   isVisible={activeService === service.id}
+                  isLastInSection={index < servicesContent.services.length - 1}
                 />
               </div>
             </React.Fragment>
@@ -50,11 +51,12 @@ export const ServicesNew = () => {
         {/* Desktop-only details section */}
         <div className="hidden md:block">
           <AnimatePresence mode="wait">
-            {servicesContent.services.map((service) => (
+            {servicesContent.services.map((service, index) => (
               <ServiceDetailsNew
                 key={service.id}
                 details={service.details}
                 isVisible={activeService === service.id}
+                isLastInSection={index < servicesContent.services.length - 1}
               />
             ))}
           </AnimatePresence>

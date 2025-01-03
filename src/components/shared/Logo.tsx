@@ -1,24 +1,20 @@
 import React from 'react';
-import { Vector } from './Vector';
-import { vectors } from '../../constants/vectors';
 
 export const Logo = () => {
   return (
-    <div className="flex items-center gap-3">
-      <div className="w-10 h-10 relative">
-        <Vector 
-          className="opacity-100" 
-          color="text-accent"
-          viewBox={vectors.logo.viewBox}
-          paths={vectors.logo.paths}
+    <a 
+      href="#" 
+      className="group transition-opacity hover:opacity-80"
+      aria-label="Go to homepage"
+    >
+      <div className="h-10 w-auto relative bg-white/80 rounded-lg p-2 transition-colors group-hover:bg-accent/60">
+        <img 
+          src="/img/logo/3volve-logo-web.svg" 
+          alt="3volve Logo"
+          title="3volve Logo"
+          className="h-full w-auto"
         />
       </div>
-      <div>
-        <span className="text-white text-2xl font-bold font-['Exo']">3volve</span>
-        <span className="text-highlight text-base ml-2 hidden sm:inline font-['Exo'] tracking-widest">
-          Discover. Design. Delight.
-        </span>
-      </div>
-    </div>
+    </a>
   );
 };

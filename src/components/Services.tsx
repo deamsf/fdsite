@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import { Search, PenTool, Sparkles } from 'lucide-react';
 import ServiceCard from './ServiceCard';
 import ServiceCarousel from './ServiceCarousel';
@@ -145,3 +145,5 @@ const Services = () => {
 };
 
 export default Services;
+
+*/

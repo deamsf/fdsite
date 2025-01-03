@@ -77,8 +77,9 @@ export const ServiceCardNew: React.FC<ServiceCardProps> = ({
           <p className="text-gray-300 text-center">{description}</p>
         </div>
         
-        <div className="md:hidden absolute bottom-2 right-2 opacity-30 pointer-events-none">
-          <Pointer className="w-4 h-4 text-accent" />
+        <div className="md:hidden absolute bottom-2 right-2 flex items-center gap-2 text-accent/40 pointer-events-none">
+          <span className="text-xs">tap this card for details</span>
+          <Pointer className="w-4 h-4" />
         </div>
       </div>
     </motion.div>
