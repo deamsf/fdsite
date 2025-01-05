@@ -11,19 +11,19 @@ export const servicesContent = {
       details: [
         {
           title: "User Research",
-          description: "Understand your audience through surveys, interviews, and feedback analysis"
+          description: "Understand your users through surveys, interviews, and feedback analysis."
         },
         {
           title: "Market Research",
-          description: "Validate product ideas with market trends and early testing"
+          description: "Validate promising product ideas with market trends and early testing."
         },
         {
           title: "Competitor Research",
-          description: "Analyze market players to identify opportunities and differentiate your product"
+          description: "Analyze market players to identify opportunities and differentiate your product."
         },
         {
           title: "Data Research",
-          description: "Transform raw data into clear, actionable insights that drive decisions"
+          description: "Transform raw data into clear, actionable insights that drive decisions."
         }
       ]
     },
@@ -36,23 +36,23 @@ export const servicesContent = {
       details: [
         {
           title: "Product Manifesto",
-          description: "Define your product's core purpose and guiding principles"
+          description: "Define your product's core purpose and guiding principles. Forge a powerful product manifesto that ignites passion, aligns stakeholders, and sets the stage for product success."
         },
         {
           title: "Product Strategy",
-          description: "Set clear vision, mission, and objectives that align with business goals"
+          description: "Create a clear vision, mission, and objectives that align with business goals. Deduct achievable milestones that drive success."
+        },
+                {
+          title: "Product Roadmap",
+          description: "Craft an agile, goal-oriented roadmap that balances quick wins with long-term projects. Plan and prioritize features based on value and impact, staying ahead of market demands."
         },
         {
           title: "Persona Development",
-          description: "Create detailed user profiles to guide product decisions"
+          description: "Bring your users to life through rich, research-backed personas that keep your team focused on building what truly matters, that guide product decisions."
         },
                 {
-          title: "xx xx",
-          description: "user centered feature development / efficient backlog mgmt / strat aligned w market opportunities / ..."
-        },
-        {
-          title: "Product Roadmap",
-          description: "Plan and prioritize features based on value and impact"
+          title: "Feature Strategy",
+          description: "Transform your product backlog into a strategic engine, crafting high-impact features that seize market opportunities through well-thought-out prioritization."
         }
       ]
     },
@@ -61,23 +61,23 @@ export const servicesContent = {
       title: "Delight",
       subtitle: "The Face of the Product",
       icon: "Sparkles",
-      description: "We ensure your website or app is not just functional and marketable, but intuitive, usable and simply delightful for your users. Too many people use products because they have to. Our ambition is to build impactful digital products people use because they love to.",
+      description: "We ensure your website or app is not just functional and marketable, but intuitive, usable and simply delightful for your users. Our ambition is to build impactful digital products people use because they love to, not because they have to.",
       details: [
         {
           title: "UX/UI Analysis",
-          description: "Enhance user experience through friction hunting and A/B testing"
+          description: "Enhance user experience through friction hunting and A/B testing."
         },
         {
           title: "SEO Strategy",
-          description: "Optimize visibility with technical and content improvements"
+          description: "Optimize visibility with technical and content improvements."
         },
         {
           title: "Communication",
-          description: "Craft compelling go-to-market strategies and content that resonates"
+          description: "Craft compelling go-to-market strategies and content that resonates."
         },
         {
           title: "Performance",
-          description: "Define, monitor and optimize product success metrics"
+          description: "Define, monitor and optimize product success metrics."
         }
       ]
     }
