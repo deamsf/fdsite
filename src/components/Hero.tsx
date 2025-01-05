@@ -39,7 +39,7 @@ const Hero = () => {
               onClick={() => scrollToSection('cases')}
               className="w-full sm:w-auto border border-accent text-accent hover:bg-accent/10 px-8 py-3 rounded-lg font-semibold transition-all"
             >
-              View Cases
+              Learn More
             </button>
           </div>
         </div>
