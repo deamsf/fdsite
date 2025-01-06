@@ -3,7 +3,7 @@ import React from 'react';
 const HeroBackground = () => {
   return (
     <div className="absolute inset-0 overflow-hidden opacity-5">
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div className="absolute inset-0 flex items-center justify-center animate-float">
         <svg 
           xmlns="http://www.w3.org/2000/svg" 
           width="100%" 
@@ -13,7 +13,7 @@ const HeroBackground = () => {
           className="w-full h-full blur-[1px] stroke-current text-accent"
           style={{ strokeWidth: '1' }}
         >
-          <g>
+          <g className="animate-pulse-slow">
             <g>
               <g>
                 <g/>

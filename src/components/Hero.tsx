@@ -10,7 +10,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-primary to-secondary">
+    <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-primary to-secondary animate-gradient">
       <HeroBackground />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
@@ -36,7 +36,7 @@ const Hero = () => {
               <ArrowRight className="w-5 h-5" />
             </button>
             <button 
-              onClick={() => scrollToSection('cases')}
+              onClick={() => scrollToSection('services')}
               className="w-full sm:w-auto border border-accent text-accent hover:bg-accent/10 px-8 py-3 rounded-lg font-semibold transition-all"
             >
               Learn More

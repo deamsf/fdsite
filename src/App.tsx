@@ -5,6 +5,7 @@ import { ServicesNew } from './components/services/ServicesNew';
 import { ClientLogos } from './components/clients/ClientLogos';
 import Cases from './components/Cases';
 import About from './components/About';
+import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -14,9 +15,10 @@ function App() {
       <Navbar />
       <Hero />
       <ServicesNew />
-      {/* <ClientLogos /> */}
-      <Cases />
       <About />
+      <Cases />
+      <ClientLogos /> {/* kan weggecomment worden */}
+      <Testimonials />
       <Contact />
       <Footer />
     </div>

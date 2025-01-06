@@ -6,6 +6,7 @@ interface ServiceDetailsProps {
   details: ServiceDetail[];
   isVisible: boolean;
   isLastInSection?: boolean;
+  sectionTitle: string;
 }
 
 const container = {
@@ -26,7 +27,8 @@ const item = {
 export const ServiceDetailsNew: React.FC<ServiceDetailsProps> = ({ 
   details, 
   isVisible,
-  isLastInSection 
+  isLastInSection,
+  sectionTitle
 }) => {
   return (
     <AnimatePresence>
@@ -38,11 +40,19 @@ export const ServiceDetailsNew: React.FC<ServiceDetailsProps> = ({
           transition={{ duration: 0.5, ease: "easeInOut" }}
           className={`overflow-hidden ${isLastInSection ? 'mb-10' : 'mb-2'}`}
         >
+          <motion.h4
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-base text-gray-300 text-center mt-8 mb-6"
+          >
+            {sectionTitle}
+          </motion.h4>
+          
           <motion.div 
             variants={container}
             initial="hidden"
             animate="show"
-            className="grid md:grid-cols-2 gap-6 mt-6"
+            className="grid md:grid-cols-2 gap-6"
           >
             {details.map((detail) => (
               <motion.div

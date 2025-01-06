@@ -1,6 +1,6 @@
 export const servicesContent = {
   title: "Our Services",
-  description: "We help you navigate from market understanding to product success using our proven discover, design, delight approach.",
+  description: "We help you navigate from market understanding to product success using our proven discover, design, delight approach. Click or tap a card to learn more.",
   services: [
     {
       id: "discover",

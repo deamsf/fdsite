@@ -1,51 +1,96 @@
 import React from 'react';
+import { Target, Users, Lightbulb, Award } from 'lucide-react';
+import { Vector } from './shared/Vector';
+import { vectors } from '../constants/vectors';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-secondary">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="relative h-[500px] rounded-lg overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1000"
-              alt="Product Management"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+    <>
+      <section id="about" className="py-20 bg-secondary">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Main Title */}
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-white mb-4">About Me</h2>
+            <p className="text-gray-300 max-w-2xl mx-auto">
+              Hi, I am Frank Damen, an experienced product manager on a mission.
+            </p>
           </div>
-          
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-white mb-6">About Us</h2>
-            
-            <div className="space-y-8">
+
+          {/* Two Column Layout */}
+          <div className="flex flex-col md:flex-row gap-12">
+            {/* Left Column - Image */}
+            <div className="w-full md:w-1/3 flex items-center">
+              <div className="relative w-64 h-64 mx-auto">
+                <div className="absolute inset-0 animate-float">
+                  <img
+                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=1000"
+                    alt="Profile"
+                    className="w-full h-full object-cover"
+                    style={{
+                      clipPath: "path('M 4 80 Q 110 7 220 20 Q 218 130 135 226 Q 41 173 4 80 Z')"
+                    }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"
+                    style={{
+                      clipPath: "path('M 4 80 Q 110 7 220 20 Q 218 130 135 226 Q 41 173 4 80 Z')"
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column - Content */}
+            <div className="w-full md:w-2/3 space-y-8">
               <div>
-                <h3 className="text-xl font-semibold text-accent mb-2">Our Story</h3>
+                <h3 className="text-2xl font-bold text-accent mb-4">Me</h3>
                 <p className="text-gray-300">
-                  At 3volve, we believe great products emerge from the perfect blend of user insights,
-                  strategic product management, and compelling communications.
+                  I'm a seasoned product manager with over a decade of experience in transforming insights and ideas into successful digital products. My approach combines deep user knowledge with strategic business thinking, helping companies navigate the complex journey from concept to market success.
                 </p>
               </div>
-              
+
               <div>
-                <h3 className="text-xl font-semibold text-accent mb-2">Our Mission</h3>
+                <h3 className="text-2xl font-bold text-accent mb-4">My Mission</h3>
                 <p className="text-gray-300">
-                  To empower businesses with product management expertise that transforms ideas
-                  into market-leading digital products.
-                </p>
-              </div>
-              
-              <div>
-                <h3 className="text-xl font-semibold text-accent mb-2">Why Choose Us</h3>
-                <p className="text-gray-300">
-                  Think of us as your "product manager/product owner as a service" - bringing
-                  expertise, methodology, and results-driven approach to your product development.
+                  I founded 3volve to help businesses build digital products that truly gain traction. Too often, key product decisions rely on gut feelings, wasting resources without achieving market impact. My approach blends research, strategic insight, and strong front-end and communication expertise.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* Why Work With Me Section */}
+      <section className="py-20 bg-primary">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-white mb-12 text-center">Why Work With Me</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-secondary/20 p-8 rounded-lg border border-accent/10">
+              <Target className="w-8 h-8 text-accent stroke-[1.25] mb-4" />
+              <h3 className="text-xl font-semibold text-white mb-2">Strategic Vision</h3>
+              <p className="text-gray-300">Transform complex market insights into clear, actionable product strategies</p>
+            </div>
+            
+            <div className="bg-secondary/20 p-8 rounded-lg border border-accent/10">
+              <Users className="w-8 h-8 text-accent stroke-[1.25] mb-4" />
+              <h3 className="text-xl font-semibold text-white mb-2">User-Centric</h3>
+              <p className="text-gray-300">Deep understanding of user needs and behavior patterns</p>
+            </div>
+            
+            <div className="bg-secondary/20 p-8 rounded-lg border border-accent/10">
+              <Lightbulb className="w-8 h-8 text-accent stroke-[1.25] mb-4" />
+              <h3 className="text-xl font-semibold text-white mb-2">Innovation Focus</h3>
+              <p className="text-gray-300">Bringing fresh perspectives and innovative solutions to product challenges</p>
+            </div>
+            
+            <div className="bg-secondary/20 p-8 rounded-lg border border-accent/10">
+              <Award className="w-8 h-8 text-accent stroke-[1.25] mb-4" />
+              <h3 className="text-xl font-semibold text-white mb-2">Proven Track Record</h3>
+              <p className="text-gray-300">Successful product launches and transformations across industries</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 

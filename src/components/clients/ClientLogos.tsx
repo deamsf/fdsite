@@ -3,7 +3,7 @@ import { clientLogos } from './logos';
 
 export const ClientLogos: React.FC = () => {
   return (
-    <section className="py-24 bg-secondary relative overflow-hidden">
+    <section className="py-24 bg-primary relative overflow-hidden">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-white mb-16 text-center font-display">
           Clients

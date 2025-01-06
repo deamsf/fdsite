@@ -8,10 +8,21 @@ import { motion, AnimatePresence } from 'framer-motion';
 export const ServicesNew = () => {
   const [activeService, setActiveService] = useState<string | null>(null);
 
+  const getSectionTitle = (serviceId: string) => {
+    switch (serviceId) {
+      case 'discover':
+        return 'Our Discover activities involve';
+      case 'design':
+        return 'Our Design activities involve';
+      case 'delight':
+        return 'Our Delight activities involve';
+      default:
+        return '';
+    }
+  };
+
   return (
     <section id="services" className="py-20 bg-primary relative overflow-hidden">
-      <VectorBackground className="opacity-[0.02] rotate-180" />
-      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -42,6 +53,7 @@ export const ServicesNew = () => {
                   details={service.details}
                   isVisible={activeService === service.id}
                   isLastInSection={index < servicesContent.services.length - 1}
+                  sectionTitle={getSectionTitle(service.id)}
                 />
               </div>
             </React.Fragment>
@@ -57,6 +69,7 @@ export const ServicesNew = () => {
                 details={service.details}
                 isVisible={activeService === service.id}
                 isLastInSection={index < servicesContent.services.length - 1}
+                sectionTitle={getSectionTitle(service.id)}
               />
             ))}
           </AnimatePresence>
