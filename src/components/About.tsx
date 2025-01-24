@@ -10,9 +10,9 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Main Title */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-white mb-4">About Me</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Over mij</h2>
             <p className="text-gray-300 max-w-2xl mx-auto">
-              Hi, I am Frank Damen, an experienced product manager on a mission.
+              Hallo, ik ben Frank Damen, een ervaren product manager en ik ben op  missie.
             </p>
           </div>
 
@@ -23,7 +23,7 @@ const About = () => {
               <div className="relative w-64 h-64 mx-auto">
                 <div className="absolute inset-0 animate-float">
                   <img
-                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=1000"
+                    src="./img/frank-orig-s.png?auto=format&fit=crop"
                     alt="Profile"
                     className="w-full h-full object-cover"
                     style={{
@@ -42,16 +42,16 @@ const About = () => {
             {/* Right Column - Content */}
             <div className="w-full md:w-2/3 space-y-8">
               <div>
-                <h3 className="text-2xl font-bold text-accent mb-4">Me</h3>
+                <h3 className="text-2xl font-bold text-accent mb-4">Mezelf</h3>
                 <p className="text-gray-300">
-                  I'm a seasoned product manager with over a decade of experience in transforming insights and ideas into successful digital products. My approach combines deep user knowledge with strategic business thinking, helping companies navigate the complex journey from concept to market success.
+                  Ik ben een doorgewinterde productmanager met meer dan tien jaar ervaring in het omzetten van inzichten en ideeën in succesvolle digitale producten. In mijn aanpak combineer ik diepgaande kennis van gebruikers met strategisch bedrijfsgericht denken, zodat ik organisaties kan helpen bij de complexe reis van concept naar marktsucces.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-accent mb-4">My Mission</h3>
+                <h3 className="text-2xl font-bold text-accent mb-4">Mijn missie</h3>
                 <p className="text-gray-300">
-                  I founded 3volve to help businesses build digital products that truly gain traction. Too often, key product decisions rely on gut feelings, wasting resources without achieving market impact. My approach blends research, strategic insight, and strong front-end and communication expertise.
+                  Ik heb 3volve opgericht om bedrijven te helpen digitale oplossingen te ontwikkelen die echt aanslaan. Al te vaak worden belangrijke productbeslissingen genomen op basis van onderbuikgevoelens, waardoor middelen worden verspild zonder echte impact in de markt. Mijn aanpak combineert onderzoek, strategisch inzicht en sterke front-end- en communicatie-expertise.
                 </p>
               </div>
             </div>
@@ -62,30 +62,30 @@ const About = () => {
       {/* Why Work With Me Section */}
       <section className="py-20 bg-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-12 text-center">Why Work With Me</h2>
+          <h2 className="text-3xl font-bold text-white mb-12 text-center">Wat ik voor jou kan betekenen</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-secondary/20 p-8 rounded-lg border border-accent/10">
               <Target className="w-8 h-8 text-accent stroke-[1.25] mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-2">Strategic Vision</h3>
-              <p className="text-gray-300">Transform complex market insights into clear, actionable product strategies</p>
+              <h3 className="text-xl font-semibold text-white mb-2">Strategische visie</h3>
+              <p className="text-gray-300">Complexe marktinzichten omzetten in duidelijke, bruikbare productstrategieën</p>
             </div>
             
             <div className="bg-secondary/20 p-8 rounded-lg border border-accent/10">
               <Users className="w-8 h-8 text-accent stroke-[1.25] mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-2">User-Centric</h3>
-              <p className="text-gray-300">Deep understanding of user needs and behavior patterns</p>
+              <h3 className="text-xl font-semibold text-white mb-2">Gebruikers centraal</h3>
+              <p className="text-gray-300">Inzicht in gebruikersbehoeften en gedragspatronen</p>
             </div>
             
             <div className="bg-secondary/20 p-8 rounded-lg border border-accent/10">
               <Lightbulb className="w-8 h-8 text-accent stroke-[1.25] mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-2">Innovation Focus</h3>
-              <p className="text-gray-300">Bringing fresh perspectives and innovative solutions to product challenges</p>
+              <h3 className="text-xl font-semibold text-white mb-2">Innovatie</h3>
+              <p className="text-gray-300">Frisse perspectieven en innovatieve oplossingen bieden voor productuitdagingen</p>
             </div>
             
             <div className="bg-secondary/20 p-8 rounded-lg border border-accent/10">
               <Award className="w-8 h-8 text-accent stroke-[1.25] mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-2">Proven Track Record</h3>
-              <p className="text-gray-300">Successful product launches and transformations across industries</p>
+              <h3 className="text-xl font-semibold text-white mb-2">Integratie</h3>
+              <p className="text-gray-300">Uitgebreide kennis en vaardigheden in communicatie</p>
             </div>
           </div>
         </div>

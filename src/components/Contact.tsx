@@ -19,7 +19,7 @@ const Contact = () => {
   const validateEmail = (email: string) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!regex.test(email)) {
-      setEmailError('Please enter a valid email address');
+      setEmailError('Dubbelcheck je e-mailadres, zodat we je kunnen bereiken.');
       return false;
     }
     setEmailError('');
@@ -28,7 +28,7 @@ const Contact = () => {
 
   const validateMessage = (message: string) => {
     if (message.length > 0 && message.length < 15) {
-      setMessageError('Please tell us a little more');
+      setMessageError('Nog een beetje meer info alsjeblieft 😊');
       return false;
     }
     setMessageError('');
@@ -80,12 +80,12 @@ const Contact = () => {
         'E-jPUZxl8ctmaHoxQ'
       );
 
-      toast.success('Message sent successfully!', { duration: 4000 });
+      toast.success('Bericht succesvol verzonden. Tot snel!', { duration: 4000 });
       formRef.current.reset();
       setFormData({ user_name: '', user_email: '', message: '' });
       // setRecaptchaValue(null); // Uncomment when enabling reCAPTCHA
     } catch (error) {
-      toast.error('Failed to send message. Please try again.', { duration: 4000 });
+      toast.error('Versturen mislukt. Probeer het even opnieuw.', { duration: 4000 });
     } finally {
       setIsSubmitting(false);
     }
@@ -95,16 +95,16 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-primary">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-white mb-4">Get in Touch</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">Contacteer mij</h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Ready for strategic product guidance? Let's elevate your product management together.
+            Klaar om jouw digitale strategie uit te werken? Let's talk!
           </p>
         </div>
         
         <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label htmlFor="user_name" className="block text-sm font-medium text-gray-300 mb-2">
-              Name <span className="text-red-500">*</span>
+              Naam <span className="text-red-500">*</span>
             </label>
             <input
               type="text"
@@ -119,7 +119,7 @@ const Contact = () => {
           
           <div>
             <label htmlFor="user_email" className="block text-sm font-medium text-gray-300 mb-2">
-              Email <span className="text-red-500">*</span>
+              E-mail <span className="text-red-500">*</span>
             </label>
             <input
               type="email"
@@ -137,7 +137,7 @@ const Contact = () => {
           
           <div>
             <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-              Message <span className="text-red-500">*</span>
+              Bericht <span className="text-red-500">*</span>
             </label>
             <textarea
               id="message"
@@ -162,11 +162,11 @@ const Contact = () => {
                   ? 'bg-highlight hover:bg-highlight/90 text-white'
                   : 'bg-accent cursor-not-allowed text-gray-600'
               }`}
-              title={!isFormValid() ? 'Please fill in the form correctly before sending' : ''}
+              title={!isFormValid() ? 'Vul het formulier aub correct in' : ''}
             >
-              {isSubmitting ? 'Sending...' : (
+              {isSubmitting ? 'Versturen...' : (
                 <>
-                  Send Message
+                  Verstuur bericht
                   <Send size={20} />
                 </>
               )}

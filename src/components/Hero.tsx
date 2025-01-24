@@ -24,7 +24,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-lg sm:text-xl text-gray-300 mb-12 max-w-2xl">
-            Discover. Design. Delight.
+            
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto">

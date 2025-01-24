@@ -16,9 +16,9 @@ function App() {
       <Hero />
       <ServicesNew />
       <About />
-      <Cases />
-      <ClientLogos /> {/* kan weggecomment worden */}
-      <Testimonials />
+      {/*  <Cases /> */}
+      <ClientLogos />
+      {/* <Testimonials /> */}
       <Contact />
       <Footer />
     </div>
