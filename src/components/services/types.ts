@@ -11,3 +11,16 @@ export interface Service {
   description: string;
   details: ServiceDetail[];
 }
+
+export interface ServiceCardProps extends Service {
+  isActive: boolean;
+  isLast: boolean;
+  onClick: () => void;
+}
+
+export interface ServiceDetailsProps {
+  details: ServiceDetail[];
+  isVisible: boolean;
+  isLastInSection?: boolean;
+  sectionTitle: string;
+}

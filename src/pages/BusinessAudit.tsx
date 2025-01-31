@@ -112,7 +112,7 @@ const BusinessAudit = () => {
                 </ul>
               </div>
 
-              <p className="text-gray-300 text-lg">
+              <p className="text-gray-300 text-lg mb-8">
                 Want to unlock your business's full potential? Let's discuss how we can help.
               </p>
             </div>

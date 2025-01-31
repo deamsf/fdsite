@@ -37,19 +37,19 @@ const ServiceIcon = ({ Icon }: { Icon: typeof Rocket }) => {
 
   return (
     <motion.div 
-      className="relative w-24 h-24 flex items-center justify-center mb-6"
+      className="relative w-32 h-32 flex items-center justify-center mx-auto"
       onMouseEnter={handleHover}
       animate={iconControls}
-      style={{ transformOrigin: "top center" }}
+      style={{ transformOrigin: "center" }}
     >
       <Vector 
         viewBox={vectors.serviceCard.viewBox}
         paths={vectors.serviceCard.path}
         className="absolute inset-0 w-full h-full"
         color="text-highlight"
-        fill="rgba(242, 211, 172, 0.1)"
+        fill="rgba(242, 211, 172, 0.2)"
       />
-      <Icon className="w-10 h-10 text-highlight stroke-[1.25] relative z-10" />
+      <Icon className="w-14 h-14 text-highlight stroke-[1.25] relative z-10" />
     </motion.div>
   );
 };
@@ -90,19 +90,51 @@ export const Services = () => {
               key={service.title}
               id={service.id}
               variants={item}
-              className={`grid md:grid-cols-2 gap-12 items-center ${
-                index % 2 === 0 ? '' : 'md:flex-row-reverse'
-              }`}
+              className="grid md:grid-cols-2 gap-12 items-center"
             >
-              <div className="space-y-6">
-                <div className="flex flex-col items-center text-center mb-8">
-                  <ServiceIcon Icon={service.icon} />
-                  <div>
-                    <h3 className="text-2xl font-bold text-white">{service.title}</h3>
-                    <p className="text-accent mt-2">{service.description}</p>
+              {/* Image/Icon Column - Always first on mobile */}
+              <div className={`order-1 ${index % 2 === 0 ? 'md:order-2' : 'md:order-1'}`}>
+                <div className="relative h-[400px] rounded-lg overflow-hidden group">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent" />
+                  
+                  {/* Overlay content */}
+                  <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8">
+                    <div className="w-full max-w-md mx-auto">
+                      <ServiceIcon Icon={service.icon} />
+                      <h3 className="text-3xl sm:text-4xl font-bold text-white mt-4 mb-6 leading-tight mx-auto">
+                        {service.title}
+                      </h3>
+                      
+                      {/* CTA Buttons */}
+                      <div className="flex flex-col gap-4 mt-6 w-full max-w-xs mx-auto">
+                        <a
+                          href="#contact"
+                          className="inline-flex items-center justify-center gap-2 bg-highlight hover:bg-highlight/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors w-full"
+                        >
+                          <span>{service.cta}</span>
+                          <ArrowRight className="w-4 h-4 stroke-[1.25]" />
+                        </a>
+                        <button
+                          onClick={() => handleLearnMore(service.path, service.id)}
+                          className="inline-flex items-center justify-center gap-2 border border-accent text-accent hover:bg-accent/10 px-6 py-3 rounded-lg font-semibold transition-colors w-full"
+                        >
+                          <span>Learn More</span>
+                          <ArrowRight className="w-4 h-4 stroke-[1.25]" />
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
+              </div>
 
+              {/* Text Column - Always second on mobile */}
+              <div className={`order-2 space-y-6 ${index % 2 === 0 ? 'md:order-1' : 'md:order-2'}`}>
+                <p className="text-accent text-xl">{service.description}</p>
                 <p className="text-gray-300">{service.subtext}</p>
 
                 <ul className="space-y-3">
@@ -113,34 +145,6 @@ export const Services = () => {
                     </li>
                   ))}
                 </ul>
-
-                <div className="flex gap-4">
-                  <a
-                    href="#contact"
-                    className="inline-flex items-center gap-2 bg-highlight hover:bg-highlight/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
-                  >
-                    <span>{service.cta}</span>
-                    <ArrowRight className="w-4 h-4 stroke-[1.25]" />
-                  </a>
-                  <button
-                    onClick={() => handleLearnMore(service.path, service.id)}
-                    className="inline-flex items-center gap-2 border border-accent text-accent hover:bg-accent/10 px-6 py-3 rounded-lg font-semibold transition-colors"
-                  >
-                    <span>Learn More</span>
-                    <ArrowRight className="w-4 h-4 stroke-[1.25]" />
-                  </button>
-                </div>
-              </div>
-
-              <div className={`h-[350px] ${index % 2 === 0 ? 'md:order-last' : 'md:order-first'}`}>
-                <div className="relative h-full w-full rounded-lg overflow-hidden group">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
-                </div>
               </div>
             </motion.div>
           ))}

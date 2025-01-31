@@ -92,7 +92,7 @@ const Websites = () => {
                 </ul>
               </div>
 
-              <p className="text-gray-300 text-lg">
+              <p className="text-gray-300 text-lg mb-8">
                 Ready to level up your business's website? Let's get in touch!
               </p>
             </div>
