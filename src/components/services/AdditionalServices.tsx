@@ -1,10 +1,61 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Rocket, ArrowRight, Check } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
+import { Rocket, Globe, LineChart, ArrowRight, Check } from 'lucide-react';
 import { motion, useAnimationControls } from 'framer-motion';
-import { Vector } from './shared/Vector';
-import { vectors } from '../constants/vectors';
-import { services } from '../constants/services';
+import { Vector } from '../shared/Vector';
+import { vectors } from '../../constants/vectors';
+
+const services = [
+  {
+    id: "digital-strategy",
+    icon: Rocket,
+    title: "Digital Strategy",
+    description: "Shape a future-proof digital strategy",
+    subtext: "We help businesses develop a clear roadmap for their digital products and services. From defining the vision to implementing a structured plan, we ensure your strategy is actionable, user-centered and results-driven.",
+    features: [
+      "Define your digital product vision & strategy",
+      "Create structured roadmaps for growth & market positioning",
+      "Align product development with customer needs and business goals",
+      "Bring your users to life using user personas"
+    ],
+    cta: "Let's think!",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200",
+    path: "/digital-strategy"
+  },
+  {
+    id: "websites",
+    icon: Globe,
+    title: "Websites",
+    description: "Your onepager website, hassle free",
+    subtext: "For small businesses and startups, a well-designed online presence is crucial. We create unique, professional, one-pager websites that look great and drive results, for an unbeatable price.",
+    features: [
+      "Beautiful, unique & mobile-friendly",
+      "No-nonsense & effective",
+      "No restrictive templates",
+      "SEO-optimized",
+      "Unbeatable price"
+    ],
+    cta: "Let's build!",
+    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&q=80&w=1200",
+    path: "/websites"
+  },
+  {
+    id: "business-audit",
+    icon: LineChart,
+    title: "Business Auditing & Consulting",
+    description: "Optimize your business with expert insights and strategic guidance.",
+    subtext: "We analyze your operations, workflows, and market positioning to uncover opportunities for growth and efficiency. Whether you need a full audit, consulting, or tailored business advice, we deliver actionable solutions.",
+    features: [
+      "In-depth business performance audits",
+      "Process optimization for increased efficiency",
+      "Strategic consulting for growth & digital transformation",
+      "Independent expert advice to improve decision-making"
+    ],
+    cta: "Let's talk!",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200",
+    path: "/business-audit"
+  }
+];
 
 const container = {
   hidden: { opacity: 0 },
@@ -54,7 +105,7 @@ const ServiceIcon = ({ Icon }: { Icon: typeof Rocket }) => {
   );
 };
 
-export const Services = () => {
+export const AdditionalServices = () => {
   const navigate = useNavigate();
 
   const handleLearnMore = (path: string, serviceId: string) => {
@@ -64,7 +115,7 @@ export const Services = () => {
   };
 
   return (
-    <section id="services" className="py-20 bg-primary relative overflow-hidden">
+    <section id="additional-services" className="py-20 bg-primary relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -72,7 +123,7 @@ export const Services = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl font-bold text-white mb-4">What we do</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">Additional Services</h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
             Comprehensive solutions to help your business thrive in the digital age
           </p>

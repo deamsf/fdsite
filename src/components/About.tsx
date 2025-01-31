@@ -2,6 +2,7 @@ import React from 'react';
 import { Target, Users, Lightbulb, Award } from 'lucide-react';
 import { Vector } from './shared/Vector';
 import { vectors } from '../constants/vectors';
+import Capabilities from './Capabilities';
 
 const About = () => {
   return (
@@ -54,38 +55,6 @@ const About = () => {
                   Ik heb 3volve opgericht om bedrijven te helpen digitale oplossingen te ontwikkelen die echt aanslaan. Al te vaak worden belangrijke productbeslissingen genomen op basis van onderbuikgevoelens, waardoor middelen worden verspild zonder echte impact in de markt. Mijn aanpak combineert onderzoek, strategisch inzicht en sterke front-end- en communicatie-expertise.
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Work With Me Section */}
-      <section className="py-20 bg-primary">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-12 text-center">Wat ik voor jou kan betekenen</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-secondary/20 p-8 rounded-lg border border-accent/10">
-              <Target className="w-8 h-8 text-accent stroke-[1.25] mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-2">Strategische visie</h3>
-              <p className="text-gray-300">Complexe marktinzichten omzetten in duidelijke, bruikbare productstrategieën</p>
-            </div>
-            
-            <div className="bg-secondary/20 p-8 rounded-lg border border-accent/10">
-              <Users className="w-8 h-8 text-accent stroke-[1.25] mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-2">Gebruikers centraal</h3>
-              <p className="text-gray-300">Inzicht in gebruikersbehoeften en gedragspatronen</p>
-            </div>
-            
-            <div className="bg-secondary/20 p-8 rounded-lg border border-accent/10">
-              <Lightbulb className="w-8 h-8 text-accent stroke-[1.25] mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-2">Innovatie</h3>
-              <p className="text-gray-300">Frisse perspectieven en innovatieve oplossingen bieden voor productuitdagingen</p>
-            </div>
-            
-            <div className="bg-secondary/20 p-8 rounded-lg border border-accent/10">
-              <Award className="w-8 h-8 text-accent stroke-[1.25] mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-2">Integratie</h3>
-              <p className="text-gray-300">Uitgebreide kennis en vaardigheden in communicatie</p>
             </div>
           </div>
         </div>

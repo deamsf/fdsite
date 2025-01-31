@@ -1,27 +1,40 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import Hero from './components/Hero';
-import { ServicesNew } from './components/services/ServicesNew';
+import { Services } from './components/Services';
 import { ClientLogos } from './components/clients/ClientLogos';
-import Cases from './components/Cases';
 import About from './components/About';
-import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import DigitalStrategy from './pages/DigitalStrategy';
+import Websites from './pages/Websites';
+import BusinessAudit from './pages/BusinessAudit';
+
+const HomePage = () => (
+  <>
+    <Navbar />
+    <Hero />
+    <Services />
+    <About />
+    <ClientLogos />
+    <Contact />
+    <Footer />
+  </>
+);
 
 function App() {
   return (
-    <div className="min-h-screen bg-primary">
-      <Navbar />
-      <Hero />
-      <ServicesNew />
-      <About />
-      {/*  <Cases /> */}
-      <ClientLogos />
-      {/* <Testimonials /> */}
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-primary">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/digital-strategy" element={<DigitalStrategy />} />
+          <Route path="/websites" element={<Websites />} />
+          <Route path="/business-audit" element={<BusinessAudit />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
