@@ -1,9 +1,13 @@
 import React from 'react';
 
-export const Logo = () => {
+interface LogoProps {
+  onClick?: () => void;
+}
+
+export const Logo: React.FC<LogoProps> = ({ onClick }) => {
   return (
-    <a 
-      href="#" 
+    <button 
+      onClick={onClick}
       className="text-gray-300 hover:text-accent transition-colors"
       aria-label="Go to homepage"
     >
@@ -15,18 +19,7 @@ export const Logo = () => {
           title="3volve Logo"
           className="h-full w-auto"
         />
-      </div> 
-      
-      
-      {/* Inverted version without background 
-      <div className="h-10 w-auto relative">
-        <img 
-          src="/img/logo/3volve-logo-web-inverted.svg" 
-          alt="3volve Logo"
-          title="3volve Logo"
-          className="h-full w-auto"
-        />
-      </div> */}
-    </a>
+      </div>
+    </button>
   );
 };

@@ -10,6 +10,8 @@ import Footer from './components/Footer';
 import DigitalStrategy from './pages/DigitalStrategy';
 import Websites from './pages/Websites';
 import BusinessAudit from './pages/BusinessAudit';
+import Privacy from './pages/Privacy';
+import Cookies from './pages/Cookies';
 
 const HomePage = () => (
   <>
@@ -32,6 +34,8 @@ function App() {
           <Route path="/digital-strategy" element={<DigitalStrategy />} />
           <Route path="/websites" element={<Websites />} />
           <Route path="/business-audit" element={<BusinessAudit />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/cookies" element={<Cookies />} />
         </Routes>
       </div>
     </Router>

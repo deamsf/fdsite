@@ -13,7 +13,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-white mb-4">Over mij</h2>
             <p className="text-gray-300 max-w-2xl mx-auto">
-              Hallo, ik ben Frank Damen, een ervaren product manager en ik ben op  missie.
+              Hallo, ik ben Frank, digitaal omnivoor.
             </p>
           </div>
 
@@ -45,7 +45,7 @@ const About = () => {
               <div>
                 <h3 className="text-2xl font-bold text-accent mb-4">Mezelf</h3>
                 <p className="text-gray-300">
-                  Ik ben een doorgewinterde productmanager met meer dan tien jaar ervaring in het omzetten van inzichten en ideeën in succesvolle digitale producten. In mijn aanpak combineer ik diepgaande kennis van gebruikers met strategisch bedrijfsgericht denken, zodat ik organisaties kan helpen bij de complexe reis van concept naar marktsucces.
+                  Ik ben een ervaren productmanager met meer dan tien jaar op de teller in het omzetten van inzichten en ideeën in succesvolle digitale strategieën en producten. In mijn aanpak combineer ik diepgaande kennis van gebruikers met strategisch bedrijfsgericht denken, zodat ik organisaties kan helpen bij de complexe reis van concept naar marktsucces.
                 </p>
               </div>
 

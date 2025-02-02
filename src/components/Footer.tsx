@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
           
           <div className="flex items-center justify-center space-x-4 text-sm text-gray-400">
-            <span>© {currentYear} 3volve Consulting. Alle rechten voorbehouden.</span>
+            <span>© {currentYear} 3volve Consulting (BE1018741807). Alle rechten voorbehouden. </span>
             <span>•</span>
             <a href="/privacy" className="hover:text-accent transition-colors">
               Privacy Policy
