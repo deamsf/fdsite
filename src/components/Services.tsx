@@ -72,9 +72,9 @@ export const Services = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl font-bold text-white mb-4">What we do</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">Diensten</h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Comprehensive solutions to help your business thrive in the digital age
+            Digitale strategieën en oplossingen om je bedrijf te laten groeien, opvallen en slagen
           </p>
         </motion.div>
 
@@ -123,7 +123,7 @@ export const Services = () => {
                           onClick={() => handleLearnMore(service.path, service.id)}
                           className="inline-flex items-center justify-center gap-2 border border-accent text-accent hover:bg-accent/10 px-6 py-3 rounded-lg font-semibold transition-colors w-full"
                         >
-                          <span>Learn More</span>
+                          <span>Ontdek meer</span>
                           <ArrowRight className="w-4 h-4 stroke-[1.25]" />
                         </button>
                       </div>

@@ -13,7 +13,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-white mb-4">Over mij</h2>
             <p className="text-gray-300 max-w-2xl mx-auto">
-              Hallo, ik ben Frank, digitaal omnivoor.
+              Ik geloof in "de gevoelige snaar" en in "geef een man geen vis"
             </p>
           </div>
 
@@ -43,16 +43,14 @@ const About = () => {
             {/* Right Column - Content */}
             <div className="w-full md:w-2/3 space-y-8">
               <div>
-                <h3 className="text-2xl font-bold text-accent mb-4">Mezelf</h3>
-                <p className="text-gray-300">
-                  Ik ben een ervaren productmanager met meer dan tien jaar op de teller in het omzetten van inzichten en ideeën in succesvolle digitale strategieën en producten. In mijn aanpak combineer ik diepgaande kennis van gebruikers met strategisch bedrijfsgericht denken, zodat ik organisaties kan helpen bij de complexe reis van concept naar marktsucces.
+                <h3 className="text-2xl font-bold text-accent mb-4"> </h3>
+                <p className="text-gray-300">Hallo, ik ben Frank, product manager en digitaal omnivoor. Mijn habitat is in de doorsnede van business, technologie en communicatie. Mijn missie? Jou strategisch versterken en je digitale ambities waarmaken.
                 </p>
               </div>
-
               <div>
-                <h3 className="text-2xl font-bold text-accent mb-4">Mijn missie</h3>
+                <h3 className="text-2xl font-bold text-accent mb-4"> </h3>
                 <p className="text-gray-300">
-                  Ik heb 3volve opgericht om bedrijven te helpen digitale oplossingen te ontwikkelen die echt aanslaan. Al te vaak worden belangrijke productbeslissingen genomen op basis van onderbuikgevoelens, waardoor middelen worden verspild zonder echte impact in de markt. Mijn aanpak combineert onderzoek, strategisch inzicht en sterke front-end- en communicatie-expertise.
+                   Ik help bedrijven impact maken met een doordachte strategie en doelgerichte productontwikkeling, zodat geen middelen verloren gaan aan digitale initiatieven zonder effect. Daarnaast help ik kleine ondernemingen een stevige plek vinden in het digitale landschap met een unieke, betaalbare website zonder gedoe en helder advies op maat – zonder verborgen kosten of lopende facturen. Geen vis, maar een hengel.
                 </p>
               </div>
             </div>

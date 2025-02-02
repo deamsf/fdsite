@@ -4,7 +4,7 @@ export const services = [
   {
     id: "digital-strategy",
     icon: Rocket,
-    title: "Digital Strategy",
+    title: "Digitale Strategie",
     description: "Shape a future-proof digital strategy",
     subtext: "We help businesses develop a clear roadmap for their digital products and services. From defining the vision to implementing a structured plan, we ensure your strategy is actionable, user-centered and results-driven.",
     features: [
@@ -18,27 +18,10 @@ export const services = [
     path: "/digital-strategy"
   },
   {
-    id: "websites",
-    icon: Globe,
-    title: "Websites",
-    description: "Your onepager website, hassle free",
-    subtext: "For small businesses and startups, a well-designed online presence is crucial. We create unique, professional, one-pager websites that look great and drive results, for an unbeatable price.",
-    features: [
-      "Beautiful, unique & mobile-friendly",
-      "No-nonsense & effective",
-      "No restrictive templates",
-      "SEO-optimized",
-      "Unbeatable price"
-    ],
-    cta: "Let's build!",
-    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&q=80&w=1200",
-    path: "/websites"
-  },
-  {
     id: "business-audit",
     icon: LineChart,
-    title: "Business Auditing & Consulting",
-    description: "Optimize your business with expert insights and strategic guidance.",
+    title: "Consulting & advies",
+    description: "Optimaliseer je business met onze inzichten en strategische ondersteuning.",
     subtext: "We analyze your operations, workflows, and market positioning to uncover opportunities for growth and efficiency. Whether you need a full audit, consulting, or tailored business advice, we deliver actionable solutions.",
     features: [
       "In-depth business performance audits",
@@ -49,5 +32,22 @@ export const services = [
     cta: "Let's talk!",
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200",
     path: "/business-audit"
+  },
+   {
+    id: "websites",
+    icon: Globe,
+    title: "Websites",
+    description: "Jouw onepager website, zonder gedoe",
+    subtext: "Voor kleine bedrijven en starters is het belangrijk dat een website doet wat het moet doen en verder geen zorgen oplevert. Soms heb je nu eenmaal geen nood aan de gekste tierlantijntjes. Wij maken unieke, professionele onepager websites die er geweldig uitzien en resultaten opleveren, voor een onverslaanbare prijs.",
+    features: [
+      "Prachtig, uniek en ook geschikt voor mobiel",
+      "No-nonsense en op maat, zonder gedoe met templates",
+      "Geen gedoe met restrictieve templates of online platformen",
+      "Geoptimaliseerd zoals het hoort voor online vindbaarheid (SEO)",
+      "Gewoon wat je nodig hebt, zéér betaalbaar en zonder verborgen kosten"
+    ],
+    cta: "Let's build!",
+    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&q=80&w=1200",
+    path: "/websites"
   }
 ] as const;
