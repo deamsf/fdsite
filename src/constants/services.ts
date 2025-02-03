@@ -2,36 +2,36 @@ import { Rocket, Globe, LineChart } from 'lucide-react';
 
 export const services = [
   {
-    id: "digital-strategy",
+    id: "digitale-strategie",
     icon: Rocket,
     title: "Digitale Strategie",
-    description: "Shape a future-proof digital strategy",
-    subtext: "We help businesses develop a clear roadmap for their digital products and services. From defining the vision to implementing a structured plan, we ensure your strategy is actionable, user-centered and results-driven.",
+    description: "Ontwikkel een future-proof digitale strategie",
+    subtext: "We helpen bedrijven een duidelijke visie ontwikkelen, een gefocuste strategie uit te bouwen en een doeltreffende roadmap op te stellen voor succes. We analyseren behoeften van je gebruikers en klanten, ondersteunen prioritiseringsoefeningen, staan je bij tijdens het realisatietraject en helpen je de juiste conclusies trekken om je product of dienst verder door te ontwikkelen.",
     features: [
-      "Define your digital product vision & strategy",
-      "Create structured roadmaps for growth & market positioning",
-      "Align product development with customer needs and business goals",
-      "Bring your users to life using user personas"
+      "Definieer je visie en strategie voor je digitale product",
+      "Creëer een gestructureerde, slim geprioritiseerde roadmap voor groei en impact",
+      "Match je productontwikkeling met klantbehoeften en business doelstellingen",
+      "Breng je doelpubliek tot leven met personas"
     ],
     cta: "Let's think!",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200",
-    path: "/digital-strategy"
+    path: "/digitale-strategie"
   },
   {
-    id: "business-audit",
+    id: "consulting",
     icon: LineChart,
     title: "Consulting & advies",
     description: "Optimaliseer je business met onze inzichten en strategische ondersteuning.",
-    subtext: "We analyze your operations, workflows, and market positioning to uncover opportunities for growth and efficiency. Whether you need a full audit, consulting, or tailored business advice, we deliver actionable solutions.",
+    subtext: "Eerst en vooral maken we grondig kennis met je onderneming. We analyseren je digitale aanpak en helpen je opportuniteiten ontdekken voor groei en efficiëntie. Het digitale landschap kan overweldigend zijn en vol uitdagingen zitten, maar biedt ook volop opportuniteiten. Ga aan de slag met ons actiegericht advies!",
     features: [
-      "In-depth business performance audits",
-      "Process optimization for increased efficiency",
-      "Strategic consulting for growth & digital transformation",
-      "Independent expert advice to improve decision-making"
+      "Diepgaande analyse van je digitale middelen",
+      "Optimalisatievoorstellen voor je processen en aanpak",
+      "Strategische consulting voor groei en digitale transformatie",
+      "Onafhankelijk advies op maat van jouw onderneming"
     ],
     cta: "Let's talk!",
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200",
-    path: "/business-audit"
+    path: "/consulting-advies"
   },
    {
     id: "websites",

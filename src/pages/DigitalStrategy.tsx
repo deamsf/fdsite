@@ -11,7 +11,7 @@ const DigitalStrategy = () => {
   const handleBack = () => {
     navigate('/');
     setTimeout(() => {
-      const serviceId = sessionStorage.getItem('lastServiceId') || 'digital-strategy';
+      const serviceId = sessionStorage.getItem('lastServiceId') || 'digitale-strategie';
       const element = document.getElementById(serviceId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });

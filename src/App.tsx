@@ -31,9 +31,9 @@ function App() {
       <div className="min-h-screen bg-primary">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/digital-strategy" element={<DigitalStrategy />} />
+          <Route path="/digitale-strategie" element={<DigitalStrategy />} />
           <Route path="/websites" element={<Websites />} />
-          <Route path="/business-audit" element={<BusinessAudit />} />
+          <Route path="/consulting-advies" element={<BusinessAudit />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/cookies" element={<Cookies />} />
         </Routes>

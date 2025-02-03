@@ -1,8 +1,8 @@
 export const navigation = {
   links: [
-    { label: 'Services', href: '#services' },
-    { label: 'About', href: '#about' },
-    { label: 'Clients', href: '#clients' },
+    { label: 'Wat ik doe', href: '#services' },
+    { label: 'Over mij', href: '#about' },
+    { label: 'Klanten', href: '#clients' },
     { label: 'Contact', href: '#contact' }
   ]
 } as const;

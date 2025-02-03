@@ -10,7 +10,7 @@ const BusinessAudit = () => {
   const handleBack = () => {
     navigate('/');
     setTimeout(() => {
-      const serviceId = sessionStorage.getItem('lastServiceId') || 'business-audit';
+      const serviceId = sessionStorage.getItem('lastServiceId') || 'consulting-advies';
       const element = document.getElementById(serviceId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
@@ -21,7 +21,7 @@ const BusinessAudit = () => {
   };
 
   useEffect(() => {
-    document.title = "Business Auditing & Consulting | 3volve - Product Management Consultancy";
+    document.title = "Consulting & advies | 3volve - Product Management Consultancy";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', 'Expert insights and strategic guidance to optimize your business operations and drive growth. We help businesses improve efficiency and achieve their goals.');
