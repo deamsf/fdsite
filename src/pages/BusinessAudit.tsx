@@ -21,10 +21,10 @@ const BusinessAudit = () => {
   };
 
   useEffect(() => {
-    document.title = "Consulting & advies | 3volve - Product Management Consultancy";
+    document.title = "Consulting & advies | 3volve - Shaping Digital Strategies";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Expert insights and strategic guidance to optimize your business operations and drive growth. We help businesses improve efficiency and achieve their goals.');
+      metaDescription.setAttribute('content', 'Het digitale landschap kan overweldigend zijn en vol uitdagingen zitten, maar biedt ook volop opportuniteiten. Optimaliseer je business met onze inzichten en strategische ondersteuning.');
     }
   }, []);
 
@@ -37,31 +37,31 @@ const BusinessAudit = () => {
             className="inline-flex items-center gap-2 text-accent hover:text-highlight transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
-            <span>Back to Services</span>
+            <span>Terug naar Diensten</span>
           </button>
 
-          <h1 className="text-4xl font-bold text-white mb-6">Optimize Your Business with Expert Auditing & Consulting</h1>
+          <h1 className="text-4xl font-bold text-white mb-6">Optimaliseer je digitale business met ons advies</h1>
           <div className="prose prose-invert">
             <h2 className="text-gray-300 text-lg mb-8">
-              Uncover inefficiencies, streamline operations, and position your business for sustainable growth.
+              Leg inefficiënties bloot, ontdek digitale opportuniteiten en creëer ruimte om te groeien.
             </h2>
 
             <div className="space-y-8">
               <div className="text-gray-300">
                 <p className="mb-6">
-                  Many businesses struggle with internal bottlenecks, outdated processes, or missed opportunities in their market. Our Business Auditing & Consulting service helps you identify areas for improvement and implement practical solutions that drive efficiency, profitability, and long-term success.
+                  Veel bedrijven worstelen met verouderde processen en missen kansen in hun markt. Ons advies helpt je bij het identificeren van frictiepunten en adviseert je bij het optimaliseren van je processen. Geen hoogdravende blabla. Wel praktische ideeën, oplossingen en andere bootsts voor je efficiëntie, groei en succes op lange termijn.
                 </p>
               </div>
 
               <div className="bg-secondary/20 p-8 rounded-lg border border-accent/10">
-                <h2 className="text-2xl font-bold text-white mb-6">What We Offer</h2>
+                <h2 className="text-2xl font-bold text-white mb-6">Wat we bieden</h2>
                 <ul className="space-y-6">
                   <li className="space-y-2">
                     <div className="flex items-start gap-3">
                       <Check className="w-5 h-5 text-highlight shrink-0 mt-1" />
                       <div>
-                        <h3 className="font-semibold text-white">Business Performance Audits</h3>
-                        <p className="text-gray-300">We take a deep dive into your operations, financials, and workflows to pinpoint inefficiencies and areas for improvement.</p>
+                        <h3 className="font-semibold text-white">Analyse</h3>
+                        <p className="text-gray-300">We analyseren je digitale middelen</p>
                       </div>
                     </div>
                   </li>
@@ -69,8 +69,8 @@ const BusinessAudit = () => {
                     <div className="flex items-start gap-3">
                       <Check className="w-5 h-5 text-highlight shrink-0 mt-1" />
                       <div>
-                        <h3 className="font-semibold text-white">Process Optimization</h3>
-                        <p className="text-gray-300">Streamline your internal processes to reduce costs, save time, and improve overall productivity.</p>
+                        <h3 className="font-semibold text-white">Optimalisaties</h3>
+                        <p className="text-gray-300">We werken een strategische aanpak uit en plannen je volgende stappen</p>
                       </div>
                     </div>
                   </li>
@@ -78,8 +78,8 @@ const BusinessAudit = () => {
                     <div className="flex items-start gap-3">
                       <Check className="w-5 h-5 text-highlight shrink-0 mt-1" />
                       <div>
-                        <h3 className="font-semibold text-white">Strategic Growth Consulting</h3>
-                        <p className="text-gray-300">Get expert guidance on scaling your business, expanding into new markets, or adopting digital transformation strategies.</p>
+                        <h3 className="font-semibold text-white">Implementatie</h3>
+                        <p className="text-gray-300">We adviseren jou en je team bij de implementatie van de nieuwigheden</p>
                       </div>
                     </div>
                   </li>
@@ -87,8 +87,8 @@ const BusinessAudit = () => {
                     <div className="flex items-start gap-3">
                       <Check className="w-5 h-5 text-highlight shrink-0 mt-1" />
                       <div>
-                        <h3 className="font-semibold text-white">Independent Expert Advice</h3>
-                        <p className="text-gray-300">Gain unbiased, data-driven insights to improve decision-making and future-proof your business.</p>
+                        <h3 className="font-semibold text-white">Communicatie</h3>
+                        <p className="text-gray-300">Ook je communicatie naar je klant of gebruiker kan op onze expertise rekenen.</p>
                       </div>
                     </div>
                   </li>
@@ -96,13 +96,13 @@ const BusinessAudit = () => {
               </div>
 
               <div className="bg-secondary/20 p-8 rounded-lg border border-accent/10">
-                <h2 className="text-2xl font-bold text-white mb-6">Why Choose Us?</h2>
+                <h2 className="text-2xl font-bold text-white mb-6">Waarom kiezen voor ons?</h2>
                 <ul className="space-y-4">
                   {[
-                    'Actionable Insights – No vague recommendations, just clear, practical strategies you can implement.',
-                    'Customized Approach – Every business is unique, so we tailor our advice to your specific needs.',
-                    'Efficiency-Driven – We help you eliminate waste, optimize resources, and maximize profitability.',
-                    'Future-Focused – Our strategies aren\'t just about fixing today\'s problems, but setting you up for long-term success.'
+                    'Praktische inzichten – Geen vage aanbevelingen, alleen duidelijke, bruikbare strategieën die je kunt implementeren.',
+'Gepersonaliseerde aanpak – Elk bedrijf is uniek, dus stemmen we ons advies af op jouw specifieke behoeften.',
+'Efficiëntiegericht – We helpen je verspilling te elimineren, middelen te optimaliseren en winstgevendheid te maximaliseren.',
+'Toekomstgericht – Onze strategieën gaan niet alleen over het oplossen van de problemen van vandaag, maar zorgen ook voor langetermijnsucces.'
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-3 text-gray-300">
                       <span className="text-highlight shrink-0">🔹</span>
@@ -113,7 +113,7 @@ const BusinessAudit = () => {
               </div>
 
               <p className="text-gray-300 text-lg mb-8">
-                Want to unlock your business's full potential? Let's discuss how we can help.
+                Wil je het volledige potentieel van je bedrijf benutten? Laat van je horen!
               </p>
             </div>
           </div>
