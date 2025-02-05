@@ -4,7 +4,7 @@ export const services = [
   {
     id: "digitale-strategie",
     icon: Rocket,
-    title: "Digitale Strategie",
+    title: "Digitale strategie",
     description: "Ontwikkel een future-proof digitale strategie",
     subtext: "We helpen bedrijven een duidelijke visie ontwikkelen, een gefocuste strategie uit te bouwen en een doeltreffende roadmap op te stellen voor succes. We analyseren behoeften van je gebruikers en klanten, ondersteunen prioritiseringsoefeningen, staan je bij tijdens het realisatietraject en helpen je de juiste conclusies trekken om je product of dienst verder door te ontwikkelen.",
     features: [

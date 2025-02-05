@@ -25,14 +25,14 @@ const Privacy = () => {
             className="inline-flex items-center gap-2 text-accent hover:text-highlight transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
-            <span>Back to Home</span>
+            <span>Terug naar de homepagina</span>
           </button>
 
           <div className="bg-secondary/20 p-8 rounded-lg border border-accent/10">
             <h1 className="text-3xl font-bold text-white mb-6">Privacy Policy</h1>
             <div className="text-gray-300 space-y-4">
               <p>Our privacy policy is currently being updated to ensure compliance with the latest regulations.</p>
-              <p>Please check back soon for our comprehensive privacy policy.</p>
+              <p>Please check back soon.</p>
               <p>If you have any immediate questions about how we handle your data, please don't hesitate to contact us.</p>
             </div>
           </div>

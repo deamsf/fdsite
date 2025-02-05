@@ -15,8 +15,8 @@ export const Logo: React.FC<LogoProps> = ({ onClick }) => {
       <div className="h-10 w-auto relative bg-white/80 rounded-lg p-2 transition-colors group-hover:bg-accent/60">
         <img 
           src="/img/logo/3volve-logo-web.svg" 
-          alt="3volve Logo"
-          title="3volve Logo"
+          alt="3volve Home"
+          title="3volve Home"
           className="h-full w-auto"
         />
       </div>

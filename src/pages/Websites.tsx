@@ -21,7 +21,7 @@ const Websites = () => {
   };
 
   useEffect(() => {
-    document.title = "Website Development | 3volve - Product Management Consultancy";
+    document.title = "Website Development | 3volve";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', 'Professional websites that drive results. Perfect for small businesses and startups looking for a strong online presence.');

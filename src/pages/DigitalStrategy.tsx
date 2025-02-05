@@ -22,7 +22,7 @@ const DigitalStrategy = () => {
   };
 
   useEffect(() => {
-    document.title = "Digital Strategy | 3volve - Product Management Consultancy";
+    document.title = "Digital Strategy | 3volve";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', 'Shape your digital future with our comprehensive strategy services. We help businesses develop clear, actionable roadmaps for their digital products and services.');
@@ -38,7 +38,7 @@ const DigitalStrategy = () => {
             className="inline-flex items-center gap-2 text-accent hover:text-highlight transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
-            <span>Back to Services</span>
+            <span>Terug naar onze diensten</span>
           </button>
 
           <h1 className="text-4xl font-bold text-white mb-6">Digital Strategy</h1>
