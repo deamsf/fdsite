@@ -25,8 +25,8 @@ const DigitalStrategy = () => {
   return (
     <>
       <SEO 
-        title="Digital Strategy | 3volve - Expert Digital Strategy Services"
-        description="Shape your digital future with our comprehensive strategy services. We help businesses develop clear, actionable roadmaps for their digital products and services."
+        title="Digitale Product en Marketing Strategie | 3volve Consulting"
+        description="Bepaal je digitale toekomst met onze uitgebreide strategische diensten. We helpen bedrijven duidelijke, haalbare roadmaps te ontwikkelen voor hun digitale producten en diensten."
       />
       <div className="min-h-screen bg-primary py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,18 +38,16 @@ const DigitalStrategy = () => {
             <span>Terug naar onze diensten</span>
           </button>
 
-          <h1 className="text-4xl font-bold text-white mb-6">Digital Strategy</h1>
+          <h1 className="text-4xl font-bold text-white mb-6">Digitale Strategie</h1>
           <div className="prose prose-invert">
             <h2 className="text-gray-300 text-lg mb-8">
-              Shape your digital future with our comprehensive strategy services
+              Vorm je digitale toekomst met onze uitgebreide strategieën op jouw maat
             </h2>
 
             <div className="text-gray-300 mb-12">
               <p>
-                We help you turn market insights into product excellence. We help businesses develop clear, actionable roadmaps for their digital products and services. 
-                Our approach combines deep market understanding with strategic planning to ensure your digital 
-                initiatives deliver real value.
- 
+                Wij helpen je om marktinzichten om te zetten in productexcellentie. We helpen bedrijven duidelijke, haalbare en vooral doelgerichte roadmaps te ontwikkelen voor hun digitale producten en diensten. 
+                Onze aanpak combineert diepgaand inzicht verwerven met strategische planning om ervoor te zorgen dat je digitale initiatieven échte waarde leveren.
               </p>
             </div>
           </div>
@@ -60,16 +58,16 @@ const DigitalStrategy = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
           <div className="space-y-8">
             <div className="bg-secondary/20 p-8 rounded-lg border border-accent/10">
-              <h2 className="text-2xl font-bold text-white mb-6">What You Get</h2>
+              <h2 className="text-2xl font-bold text-white mb-6">Wat je krijgt</h2>
               <ul className="space-y-4">
                 {[
-                  'Comprehensive digital strategy assessment and roadmap',
-                  'Clear vision and mission statement for your digital initiatives',
-                  'Detailed user personas and journey maps',
-                  'Competitive analysis and market positioning strategy',
-                  'Actionable implementation plan with clear milestones',
-                  'KPI framework to measure success',
-                  'Regular strategy review and adjustment sessions'
+                  'Uitgebreide digitale strategie en roadmap',
+                  'Duidelijke visie en missieverklaring voor je digitale initiatieven',
+                  'Gedetailleerde gebruikerspersona\'s en customer journeymapping',
+                  'Concurrentieanalyse en marktpositionering',
+                  'Haalbaar implementatieplan met duidelijke mijlpalen',
+                  'KPI-raamwerk om succes te meten',
+                  'Regelmatige strategiereview en aanpassingssessies'
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3 text-gray-300">
                     <Check className="w-5 h-5 text-highlight shrink-0 mt-0.5" />
@@ -80,14 +78,14 @@ const DigitalStrategy = () => {
             </div>
 
             <div className="bg-secondary/20 p-8 rounded-lg border border-accent/10">
-              <h2 className="text-2xl font-bold text-white mb-6">Why Choose Us?</h2>
+              <h2 className="text-2xl font-bold text-white mb-6">Waarom voor ons kiezen?</h2>
               <ul className="space-y-4">
                 {[
-                  'Deep expertise in digital product strategy and market analysis',
-                  'Proven methodology that combines user needs with business goals',
-                  'Focus on actionable, measurable outcomes',
-                  'Flexible approach that adapts to your business context',
-                  'Continuous support throughout strategy implementation'
+                  'Diepgaande expertise in digitale productstrategie en marktanalyse',
+                  'Bewezen methode die gebruikersbehoeften combineert met bedrijfsdoelen',
+                  'Focus op haalbare, meetbare resultaten',
+                  'Flexibele aanpak die zich aanpast aan jouw bedrijfscontext',
+                  'Continue ondersteuning tijdens de implementatie van de strategie'
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3 text-gray-300">
                     <span className="text-highlight shrink-0">🔹</span>
@@ -99,7 +97,7 @@ const DigitalStrategy = () => {
 
             <div className="text-center">
               <p className="text-gray-300 text-lg mb-8">
-                Ready to develop your digital strategy? Let's sit together!
+                Klaar om je digitale strategie te ontwikkelen en je producten en diensten een boost te geven? Laten we samen zitten!
               </p>
             </div>
           </div>
