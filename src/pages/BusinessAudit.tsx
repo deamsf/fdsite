@@ -24,7 +24,7 @@ const BusinessAudit = () => {
   return (
     <>
       <SEO 
-        title="Consulting & Advies | 3volve - Expert Business Consulting"
+        title="Digitale consulting & advies | 3volve Consulting"
         description="Het digitale landschap kan overweldigend zijn en vol uitdagingen zitten, maar biedt ook volop opportuniteiten. Optimaliseer je business met onze inzichten en strategische ondersteuning."
       />
       <div className="min-h-screen bg-primary py-12">
@@ -34,7 +34,7 @@ const BusinessAudit = () => {
             className="inline-flex items-center gap-2 text-accent hover:text-highlight transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
-            <span>Terug naar Diensten</span>
+            <span>Terug naar onze diensten</span>
           </button>
 
           <h1 className="text-4xl font-bold text-white mb-6">Optimaliseer je digitale business met ons advies</h1>
