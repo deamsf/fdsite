@@ -24,8 +24,8 @@ const Websites = () => {
   return (
     <>
       <SEO 
-        title="Website Development | 3volve - Professional Web Design"
-        description="Professional websites that drive results. Perfect for small businesses and startups looking for a strong online presence without the hassle."
+        title="Kleine professionele websites zonder zorgen | 3volve Consulting"
+        description="Professionele websites die resultaat opleveren. Perfect voor kleine bedrijven en starters die op zoek zijn naar een sterke online aanwezigheid zonder gedoe of lock-in."
       />
       <div className="min-h-screen bg-primary py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -34,35 +34,36 @@ const Websites = () => {
             className="inline-flex items-center gap-2 text-accent hover:text-highlight transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
-            <span>Back to Services</span>
+            <span>Terug naar onze diensten</span>
           </button>
 
-          <h1 className="text-4xl font-bold text-white mb-6">Websites for Small Businesses</h1>
+          <h1 className="text-4xl font-bold text-white mb-6">Websites voor kleine ondernemingen</h1>
           <div className="prose prose-invert">
             <div className="space-y-8">
               <div className="text-gray-300">
                 <h2 className="text-gray-300 text-lg mb-8">
-                  Many small businesses struggle with outdated websites or expensive development costs.
+                  Veel kleine bedrijven worstelen met sterk verouderde websites en/of dure ontwikkelingskosten.
                 </h2>
               </div>
 
               <div className="text-gray-300">
                 <p className="mb-6">
-                  We offer a streamlined one-pager website solution, perfect for small enterprises that need a clean, effective online presence at an affordable and transparent cost. No secrets!
+                  Wij bieden een strakke one-pager website-oplossing, perfect voor kleine ondernemingen die een heldere, effectieve online aanwezigheid nodig hebben voor een betaalbare en transparante prijs. Geen gedoe, geen geheimen!
                 </p>
               </div>
 
               <div className="bg-secondary/20 p-8 rounded-lg border border-accent/10">
-                <h2 className="text-2xl font-bold text-white mb-6">What You Get</h2>
+                <h2 className="text-2xl font-bold text-white mb-6">Wat je krijgt</h2>
                 <ul className="space-y-4">
                   {[
-                    'A modern, professional and streamlined onepager website, built for value and efficiency',
-                    'Custom one-page website tailored to your brand',
-                    'Tailored design & content for a professional look and feel',
-                    'One intake talk and one revision round',
-                    'No complicated systems, just a sleek, modern website that does the job',
-                    'Fast loading & mobile-friendly for the best user experience',
-                    'Zero clutter, zero fuss, zero hidden costs'
+                  'A moderne, professionele en gestroomlijnde onepager-website, gebouwd voor waarde en efficiëntie',
+'Op maat gemaakte one-page website afgestemd op jouw merk',
+'Op maat gemaakt ontwerp & inhoud voor een professionele uitstraling',
+'Eén intakegesprek en één revisieronde',
+'Geen ingewikkelde systemen, gewoon een strakke, moderne website die doet wat hij moet doen',
+'Snelle laadtijd & mobielvriendelijk voor de beste gebruikerservaring',
+'Geen rommel, geen gedoe, geen verborgen kosten'
+
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-3 text-gray-300">
                       <Check className="w-5 h-5 text-highlight shrink-0 mt-0.5" />
@@ -73,12 +74,13 @@ const Websites = () => {
               </div>
 
               <div className="bg-secondary/20 p-8 rounded-lg border border-accent/10">
-                <h2 className="text-2xl font-bold text-white mb-6">Why Choose Us?</h2>
+                <h2 className="text-2xl font-bold text-white mb-6">Waarom voor ons kiezen?</h2>
                 <ul className="space-y-4">
                   {[
-                    'We don\'t sell uneccessary extras. You\'ll get a simple yet great looking webpage that does the job.',
-                    'We are here to help. You want new or additional content? You\'ll get an honest quote for hourly work.',
-                    'We don\'t lock you in. You own your site and domain name.'
+                'We verkopen geen onnodige extra\'s. Je krijgt een eenvoudige, aantrekkelijke website voor jouw budget die doet wat hij moet doen.',
+'We zijn hier om te helpen. Wil je nieuwe of extra inhoud? Je krijgt een eerlijke offerte voor uurtariefwerk.',
+'We zetten je niet vast. Jij bezit je website en domeinnaam.'
+
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-3 text-gray-300">
                       <span className="text-highlight shrink-0">🔹</span>
@@ -89,7 +91,7 @@ const Websites = () => {
               </div>
 
               <p className="text-gray-300 text-lg mb-8">
-                Ready to level up your business's website? Let's get in touch!
+                Een nieuwe website die gewoon doet wat moet, zonder zorgen? Laten we kennismaken! 
               </p>
             </div>
           </div>
