@@ -29,7 +29,7 @@ const NotFound = () => {
   return (
     <div className="min-h-screen bg-primary flex flex-col">
       <SEO 
-        title="Pagina Niet Gevonden | 3volve"
+        title="Pagina Niet Gevonden | 3volve Consulting"
         description="Sorry, we kunnen de pagina die je zoekt niet vinden. Ontdek onze andere diensten of ga terug naar de homepagina."
       />
       <Navbar />
