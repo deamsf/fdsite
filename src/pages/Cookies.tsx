@@ -11,8 +11,8 @@ const Cookies = () => {
   return (
     <div className="min-h-screen bg-primary flex flex-col">
       <SEO 
-        title="Cookie Policy | 3volve - Privacy & Security"
-        description="Learn about how we use cookies to improve your experience on 3volve's website. Our cookie policy explains what data we collect and how we use it."
+        title="Cookie Policy | 3volve Consulting"
+        description="Lees meer over hoe we cookies gebruiken om uw ervaring op de website van 3volve Consulting te verbeteren. Ons cookiebeleid legt uit welke gegevens we verzamelen en hoe we deze gebruiken."
       />
       <Navbar />
       <main className="flex-grow pt-20">
@@ -28,9 +28,9 @@ const Cookies = () => {
           <div className="bg-secondary/20 p-8 rounded-lg border border-accent/10">
             <h1 className="text-3xl font-bold text-white mb-6">Cookie Policy</h1>
             <div className="text-gray-300 space-y-4">
-              <p>Our cookie policy is currently being updated to ensure transparency about how we use cookies on our website.</p>
-              <p>Please check back soon.</p>
-              <p>If you have any immediate questions about our use of cookies, please don't hesitate to contact us.</p>
+              <p>Ons cookiebeleid wordt momenteel ontwikkeld.</p>
+              <p>Kijk binnenkort nog eens terug.</p>
+              <p>Als je vragen hebt, aarzel dan niet om contact met ons op te nemen.</p>
             </div>
           </div>
         </div>
