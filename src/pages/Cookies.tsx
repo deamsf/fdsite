@@ -1,22 +1,19 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { ArrowLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { Navbar } from '../components/Navbar';
 import Footer from '../components/Footer';
+import { SEO } from '../components/SEO';
 
 const Cookies = () => {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    document.title = "Cookie Policy | 3volve";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Cookie Policy for 3volve - Learn about how we use cookies to improve your experience.');
-    }
-  }, []);
-
   return (
     <div className="min-h-screen bg-primary flex flex-col">
+      <SEO 
+        title="Cookie Policy | 3volve - Privacy & Security"
+        description="Learn about how we use cookies to improve your experience on 3volve's website. Our cookie policy explains what data we collect and how we use it."
+      />
       <Navbar />
       <main className="flex-grow pt-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

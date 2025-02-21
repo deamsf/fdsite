@@ -12,9 +12,12 @@ import Websites from './pages/Websites';
 import BusinessAudit from './pages/BusinessAudit';
 import Privacy from './pages/Privacy';
 import Cookies from './pages/Cookies';
+import NotFound from './pages/NotFound';
+import { SEO } from './components/SEO';
 
 const HomePage = () => (
   <>
+    <SEO />
     <Navbar />
     <Hero />
     <Services />
@@ -36,6 +39,7 @@ function App() {
           <Route path="/consulting-advies" element={<BusinessAudit />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/cookies" element={<Cookies />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </Router>

@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { ServicesSection } from '../components/services/ServicesSection';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import { SEO } from '../components/SEO';
 
 const DigitalStrategy = () => {
   const navigate = useNavigate();
@@ -21,16 +22,12 @@ const DigitalStrategy = () => {
     }, 100);
   };
 
-  useEffect(() => {
-    document.title = "Digital Strategy | 3volve";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Shape your digital future with our comprehensive strategy services. We help businesses develop clear, actionable roadmaps for their digital products and services.');
-    }
-  }, []);
-
   return (
     <>
+      <SEO 
+        title="Digital Strategy | 3volve - Expert Digital Strategy Services"
+        description="Shape your digital future with our comprehensive strategy services. We help businesses develop clear, actionable roadmaps for their digital products and services."
+      />
       <div className="min-h-screen bg-primary py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <button 
@@ -60,7 +57,6 @@ const DigitalStrategy = () => {
 
         <ServicesSection />
 
-        {/* Reduced top margin from mt-20 to mt-8 */}
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
           <div className="space-y-8">
             <div className="bg-secondary/20 p-8 rounded-lg border border-accent/10">

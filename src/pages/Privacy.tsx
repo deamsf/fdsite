@@ -1,22 +1,19 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { ArrowLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { Navbar } from '../components/Navbar';
 import Footer from '../components/Footer';
+import { SEO } from '../components/SEO';
 
 const Privacy = () => {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    document.title = "Privacy Policy | 3volve";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Privacy Policy for 3volve - Learn how we protect and handle your personal information.');
-    }
-  }, []);
-
   return (
     <div className="min-h-screen bg-primary flex flex-col">
+      <SEO 
+        title="Privacy Policy | 3volve - Privacy & Security"
+        description="Learn how we protect and handle your personal information at 3volve. Our privacy policy outlines our commitment to data protection and user privacy."
+      />
       <Navbar />
       <main className="flex-grow pt-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

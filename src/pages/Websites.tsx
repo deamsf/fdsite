@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { ArrowLeft, Check } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import { SEO } from '../components/SEO';
 
 const Websites = () => {
   const navigate = useNavigate();
@@ -20,16 +21,12 @@ const Websites = () => {
     }, 100);
   };
 
-  useEffect(() => {
-    document.title = "Website Development | 3volve";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional websites that drive results. Perfect for small businesses and startups looking for a strong online presence.');
-    }
-  }, []);
-
   return (
     <>
+      <SEO 
+        title="Website Development | 3volve - Professional Web Design"
+        description="Professional websites that drive results. Perfect for small businesses and startups looking for a strong online presence without the hassle."
+      />
       <div className="min-h-screen bg-primary py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <button 
@@ -44,13 +41,12 @@ const Websites = () => {
           <div className="prose prose-invert">
             <div className="space-y-8">
               <div className="text-gray-300">
-                           <h2 className="text-gray-300 text-lg mb-8">
-                  
+                <h2 className="text-gray-300 text-lg mb-8">
                   Many small businesses struggle with outdated websites or expensive development costs.
                 </h2>
               </div>
 
-                         <div className="text-gray-300">
+              <div className="text-gray-300">
                 <p className="mb-6">
                   We offer a streamlined one-pager website solution, perfect for small enterprises that need a clean, effective online presence at an affordable and transparent cost. No secrets!
                 </p>

@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { ArrowLeft, Check } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import { SEO } from '../components/SEO';
 
 const BusinessAudit = () => {
   const navigate = useNavigate();
@@ -20,16 +21,12 @@ const BusinessAudit = () => {
     }, 100);
   };
 
-  useEffect(() => {
-    document.title = "Consulting & advies | 3volve - Shaping Digital Strategies";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Het digitale landschap kan overweldigend zijn en vol uitdagingen zitten, maar biedt ook volop opportuniteiten. Optimaliseer je business met onze inzichten en strategische ondersteuning.');
-    }
-  }, []);
-
   return (
     <>
+      <SEO 
+        title="Consulting & Advies | 3volve - Expert Business Consulting"
+        description="Het digitale landschap kan overweldigend zijn en vol uitdagingen zitten, maar biedt ook volop opportuniteiten. Optimaliseer je business met onze inzichten en strategische ondersteuning."
+      />
       <div className="min-h-screen bg-primary py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <button 
@@ -100,9 +97,9 @@ const BusinessAudit = () => {
                 <ul className="space-y-4">
                   {[
                     'Praktische inzichten – Geen vage aanbevelingen, alleen duidelijke, bruikbare strategieën die je kunt implementeren.',
-'Gepersonaliseerde aanpak – Elk bedrijf is uniek, dus stemmen we ons advies af op jouw specifieke behoeften.',
-'Efficiëntiegericht – We helpen je verspilling te elimineren, middelen te optimaliseren en winstgevendheid te maximaliseren.',
-'Toekomstgericht – Onze strategieën gaan niet alleen over het oplossen van de problemen van vandaag, maar zorgen ook voor langetermijnsucces.'
+                    'Gepersonaliseerde aanpak – Elk bedrijf is uniek, dus stemmen we ons advies af op jouw specifieke behoeften.',
+                    'Efficiëntiegericht – We helpen je verspilling te elimineren, middelen te optimaliseren en winstgevendheid te maximaliseren.',
+                    'Toekomstgericht – Onze strategieën gaan niet alleen over het oplossen van de problemen van vandaag, maar zorgen ook voor langetermijnsucces.'
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-3 text-gray-300">
                       <span className="text-highlight shrink-0">🔹</span>
