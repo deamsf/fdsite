@@ -11,8 +11,8 @@ const Privacy = () => {
   return (
     <div className="min-h-screen bg-primary flex flex-col">
       <SEO 
-        title="Privacy Policy | 3volve - Privacy & Security"
-        description="Learn how we protect and handle your personal information at 3volve. Our privacy policy outlines our commitment to data protection and user privacy."
+        title="Privacy Policy | 3volve Consulting"
+        description="Lees hoe we uw persoonlijke gegevens beschermen en behandelen bij 3volve. Ons privacybeleid beschrijft onze toewijding aan gegevensbescherming en privacy van gebruikers."
       />
       <Navbar />
       <main className="flex-grow pt-20">
@@ -28,9 +28,9 @@ const Privacy = () => {
           <div className="bg-secondary/20 p-8 rounded-lg border border-accent/10">
             <h1 className="text-3xl font-bold text-white mb-6">Privacy Policy</h1>
             <div className="text-gray-300 space-y-4">
-              <p>Our privacy policy is currently being updated to ensure compliance with the latest regulations.</p>
-              <p>Please check back soon.</p>
-              <p>If you have any immediate questions about how we handle your data, please don't hesitate to contact us.</p>
+              <p>Ons privacybeleid wordt momenteel ontwikkeld.</p>
+              <p>Kijk binnenkort nog eens terug.</p>
+              <p>Als je intussen vragen hebt, aarzel dan niet om contact met ons op te nemen.</p>
             </div>
           </div>
         </div>
