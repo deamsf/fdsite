@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Rocket, ArrowRight, Check } from 'lucide-react';
+import { Rocket, ArrowRight, Check, MessageSquare } from 'lucide-react';
 import { motion, useAnimationControls } from 'framer-motion';
 import { Vector } from './shared/Vector';
 import { vectors } from '../constants/vectors';
@@ -117,7 +117,7 @@ export const Services = () => {
                           className="inline-flex items-center justify-center gap-2 bg-highlight hover:bg-highlight/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors w-full"
                         >
                           <span>{service.cta}</span>
-                          <ArrowRight className="w-4 h-4 stroke-[1.25]" />
+                          <MessageSquare className="w-4 h-4 stroke-[1.25]" />
                         </a>
                         <a
                           href={service.path}
