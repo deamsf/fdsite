@@ -9,7 +9,7 @@ interface SEOProps {
 
 export const SEO: React.FC<SEOProps> = ({ 
   title = '3volve - Shaping Digital Strategies',
-  description = '3volve helps businesses transform ideas into market-leading digital products through expert product management consulting services.'
+  description = '3volve helpt bedrijven ideeën om te zetten naar digitale producten met impact door expertise in product management aan te reiken.'
 }) => {
   const location = useLocation();
   const canonicalUrl = `https://www.3volve.be${location.pathname}`;
