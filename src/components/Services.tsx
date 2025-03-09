@@ -119,13 +119,17 @@ export const Services = () => {
                           <span>{service.cta}</span>
                           <ArrowRight className="w-4 h-4 stroke-[1.25]" />
                         </a>
-                        <button
-                          onClick={() => handleLearnMore(service.path, service.id)}
+                        <a
+                          href={service.path}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            handleLearnMore(service.path, service.id);
+                          }}
                           className="inline-flex items-center justify-center gap-2 border border-accent text-accent hover:bg-accent/10 px-6 py-3 rounded-lg font-semibold transition-colors w-full"
                         >
                           <span>Ontdek meer</span>
                           <ArrowRight className="w-4 h-4 stroke-[1.25]" />
-                        </button>
+                        </a>
                       </div>
                     </div>
                   </div>
