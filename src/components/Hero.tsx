@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, MessageSquare } from 'lucide-react';
 import ScrollIndicator from './ScrollIndicator';
 import HeroBackground from './HeroBackground';
 
@@ -61,19 +61,27 @@ const Hero: React.FC<HeroProps> = ({ carouselDelay = 2500 }) => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto">
-            <button 
-              onClick={() => scrollToSection('contact')}
+            <a 
+              href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('contact');
+              }}
               className="w-full sm:w-auto bg-highlight hover:bg-highlight/90 text-white px-8 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all"
             >
               Contacteer ons
-              <ArrowRight className="w-5 h-5" />
-            </button>
-            <button 
-              onClick={() => scrollToSection('services')}
+              <MessageSquare className="w-5 h-5" />
+            </a>
+            <a 
+              href="#services"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('services');
+              }}
               className="w-full sm:w-auto border border-accent text-accent hover:bg-accent/10 px-8 py-3 rounded-lg font-semibold transition-all"
             >
               Onze diensten
-            </button>
+            </a>
           </div>
         </div>
       </div>
