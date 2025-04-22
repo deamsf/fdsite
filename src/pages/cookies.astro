@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Contact from '../components/Contact';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+const title = "Cookie Policy | 3volve Consulting";
+const description = "Lees meer over hoe we cookies gebruiken om uw ervaring op de website van 3volve Consulting te verbeteren. Ons cookiebeleid legt uit welke gegevens we verzamelen en hoe we deze gebruiken.";
+
+const breadcrumbItems = [
+  { label: 'Cookie Policy', href: '/cookies' }
+];
+---
+
+<Layout {title} {description}>
+  <div class="min-h-screen bg-primary">
+    <div class="max-w-4xl pt-28 pb-12 mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-bold text-white mt-6 mb-6">Cookie Policy</h1>
+      <Breadcrumbs items={breadcrumbItems} />
+      
+      <div class="prose prose-invert mt-8">
+        <div class="bg-secondary/20 p-8 rounded-lg border border-accent/10">
+          <div class="text-gray-300 space-y-4">
+            <p>Ons cookiebeleid wordt momenteel ontwikkeld.</p>
+            <p>Kijk binnenkort nog eens terug.</p>
+            <p>Als je vragen hebt, aarzel dan niet om contact met ons op te nemen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

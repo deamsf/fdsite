@@ -1,0 +1,160 @@
+---
+import { MessageSquare } from 'lucide-react';
+import ScrollIndicator from './ScrollIndicator.astro';
+import HeroBackground from './HeroBackground.astro';
+
+const subtitleWords = ['strategy', 'product', 'presence', 'communication', 'success'];
+---
+
+<div class="relative bg-gradient-radial from-primary via-primary/95 to-secondary bg-animate min-h-screen">
+   <div class="absolute inset-0 overflow-hidden opacity-5">
+  <div class="absolute inset-0 flex items-center justify-center animate-float">
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      width="100%" 
+      height="100%" 
+      viewBox="-0.5 -0.5 235 235" 
+      preserveAspectRatio="xMidYMid slice"
+      class="w-full h-full blur-[1px] stroke-current text-accent"
+      style="stroke-width: 1"
+    >
+      <defs>
+        <linearGradient id="hero-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="var(--color-accent)" stop-opacity="0.8"/>
+          <stop offset="50%" stop-color="var(--color-highlight)" stop-opacity="0.6"/>
+          <stop offset="100%" stop-color="var(--color-accent)" stop-opacity="0.8"/>
+        </linearGradient>
+      </defs>
+      <g class="animate-pulse-slow">
+        <g>
+          <g>
+            <g/>
+            <g>
+              <g>
+                <path d="M 4 80 Q 110 7 220 20" fill="none" stroke="url(#hero-gradient)" stroke-miterlimit="10" />
+              </g>
+            </g>
+            <g>
+              <g>
+                <path d="M 135 226 Q 218 130 220 20" fill="none" stroke="url(#hero-gradient)" stroke-miterlimit="10" />
+              </g>
+            </g>
+            <g>
+              <g>
+                <path d="M 4 80 Q 41 173 135 226" fill="none" stroke="url(#hero-gradient)" stroke-miterlimit="10" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  </div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full relative z-10 flex items-center min-h-screen">
+    <div class="flex flex-col items-center text-center max-w-7xl mx-auto">
+      <!-- Subtitle animation -->
+      <div class="text-tertiary font-medium mb-6 tracking-wide animate-fade-in relative flex items-center h-8">
+        <span style="padding-right: 5px;">Shaping your digital</span>
+        
+        <span class="relative inline-block w-32 ml-2 h-8 overflow-hidden">
+          <span id="word-carousel" class="absolute inset-0 flex items-center justify-start">
+            {subtitleWords.map((word, index) => (
+              <span
+                class={`word-animation absolute w-full text-left transition-all duration-500 opacity-0 transform translate-y-4 ${index === 0 ? 'active' : ''}`}
+                data-index={index}
+              >
+                {word}
+              </span>
+            ))}
+          </span>
+        </span>
+      </div>
+      
+      <!-- Main heading -->
+     <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-white mb-8 leading-tight hero-h1">
+        We help you turn market insights into digital excellence
+      </h1>
+    
+      <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto">
+        <a 
+          href="#contact"
+          class="bg-highlight hover:bg-highlight/90 text-white px-8 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all"
+
+        >
+          Contacteer ons
+          <MessageSquare client:load className="w-5 h-5" />
+        </a>
+        <a 
+          href="#services"
+          class="border border-accent text-accent hover:bg-accent/10 px-8 py-3 rounded-lg font-semibold transition-all"
+      
+
+        >
+          Onze diensten
+        </a>
+      </div>
+    </div> 
+  </div>
+
+</div>
+
+<style>
+  .word-animation {
+    transition: opacity 500ms ease-out, transform 500ms ease-out;
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  .word-animation.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .bg-animate {
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+     .hero-h1 {
+        font-size: 3.75rem;
+    }
+</style>
+
+<script>
+  function setupWordCarousel() {
+    const words = document.querySelectorAll('.word-animation');
+    let currentIndex = 0;
+
+    function updateActiveWord() {
+      words.forEach((word, index) => {
+        if (index === currentIndex) {
+          word.classList.add('active');
+        } else {
+          word.classList.remove('active');
+        }
+      });
+
+      currentIndex = (currentIndex + 1) % words.length;
+    }
+
+    setInterval(updateActiveWord, 2500);
+    updateActiveWord(); // Start meteen
+  }
+
+  document.addEventListener('astro:page-load', setupWordCarousel);
+  setupWordCarousel();
+</script>

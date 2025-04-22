@@ -6,7 +6,9 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [
-    react(),
+    react({
+      include: '**/*.{jsx,tsx}',
+    }),
     {
       name: 'generate-sitemap',
       writeBundle: () => {
@@ -33,6 +35,11 @@ export default defineConfig({
           'ui': ['lucide-react', 'framer-motion']
         }
       }
+    }
+  },
+  resolve: {
+    alias: {
+      '@': '/src'
     }
   }
 });
