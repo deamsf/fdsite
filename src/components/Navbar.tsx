@@ -20,6 +20,14 @@ export const Navbar = () => {
     setIsServicesPanelOpen(!isServicesPanelOpen);
   };
 
+  const toggleMobileMenu = () => {
+    setIsOpen(!isOpen);
+    // Close services panel when toggling mobile menu
+    if (isServicesPanelOpen) {
+      setIsServicesPanelOpen(false);
+    }
+  };
+
   return (
     <nav className="fixed w-full bg-primary/50 backdrop-blur-md z-50 top-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -50,7 +58,7 @@ export const Navbar = () => {
           </div>
           
           <button
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={toggleMobileMenu}
             className="md:hidden text-gray-300 hover:text-accent p-2"
             aria-label="Toggle menu"
           >
